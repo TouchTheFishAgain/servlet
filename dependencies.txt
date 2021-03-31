@@ -1,0 +1,835 @@
+
+> Configure project :app
+Found slf4j-api dependency but no providers were found.  Did you mean to add slf4j-simple? See https://www.slf4j.org/codes.html#noProviders .
+
+> Task :app:dependencies
+
+------------------------------------------------------------
+Project :app
+------------------------------------------------------------
+
+annotationProcessor - Annotation processors and their dependencies for source set 'main'.
+\--- org.projectlombok:lombok:1.18.16
+
+apiElements - API elements for main. (n)
+No dependencies
+
+archives - Configuration for archive artifacts. (n)
+No dependencies
+
+compileClasspath - Compile classpath for source set 'main'.
++--- javax.servlet:javax.servlet-api:3.1.0
++--- javax.websocket:javax.websocket-api:1.0
++--- com.google.guava:guava:29.0-jre
+|    +--- com.google.guava:failureaccess:1.0.1
+|    +--- com.google.guava:listenablefuture:9999.0-empty-to-avoid-conflict-with-guava
+|    +--- com.google.code.findbugs:jsr305:3.0.2
+|    +--- org.checkerframework:checker-qual:2.11.1
+|    +--- com.google.errorprone:error_prone_annotations:2.3.4
+|    \--- com.google.j2objc:j2objc-annotations:1.3
++--- org.slf4j:slf4j-api:1.7.30
+\--- org.projectlombok:lombok:1.18.16
+
+compileOnly - Compile only dependencies for source set 'main'. (n)
+No dependencies
+
+default - Configuration for default artifacts. (n)
+No dependencies
+
+gretty
+No dependencies
+
+grettyNoSpringBoot
+No dependencies
+
+grettyProductRuntime
++--- javax.servlet:javax.servlet-api:3.1.0
++--- javax.websocket:javax.websocket-api:1.0
++--- com.google.guava:guava:29.0-jre
+|    +--- com.google.guava:failureaccess:1.0.1
+|    +--- com.google.guava:listenablefuture:9999.0-empty-to-avoid-conflict-with-guava
+|    +--- com.google.code.findbugs:jsr305:3.0.2
+|    +--- org.checkerframework:checker-qual:2.11.1
+|    +--- com.google.errorprone:error_prone_annotations:2.3.4
+|    \--- com.google.j2objc:j2objc-annotations:1.3
+\--- org.slf4j:slf4j-api:1.7.30
+
+grettyProvidedCompile
++--- javax.servlet:javax.servlet-api:3.1.0
+\--- javax.websocket:javax.websocket-api:1.0
+
+grettyRunnerJetty7
+\--- org.gretty:gretty-runner-jetty7:3.0.4
+     +--- org.gretty:gretty-runner-jetty:3.0.4
+     |    \--- org.gretty:gretty-runner:3.0.4
+     |         +--- org.codehaus.groovy:groovy:2.5.14
+     |         +--- org.codehaus.groovy:groovy-cli-commons:2.5.14
+     |         |    +--- org.codehaus.groovy:groovy:2.5.14
+     |         |    \--- commons-cli:commons-cli:1.4
+     |         +--- org.codehaus.groovy:groovy-json:2.5.14
+     |         |    \--- org.codehaus.groovy:groovy:2.5.14
+     |         +--- commons-cli:commons-cli:1.3.1 -> 1.4
+     |         +--- commons-io:commons-io:2.4
+     |         +--- ch.qos.logback:logback-classic:1.1.3
+     |         |    +--- ch.qos.logback:logback-core:1.1.3
+     |         |    \--- org.slf4j:slf4j-api:1.7.7 -> 1.7.30
+     |         \--- org.gretty:gretty-common:3.0.4
+     |              +--- org.codehaus.groovy:groovy:2.5.14
+     |              +--- org.codehaus.groovy:groovy-ant:2.5.14
+     |              |    +--- org.codehaus.groovy:groovy:2.5.14
+     |              |    +--- org.apache.ant:ant:1.9.15
+     |              |    |    \--- org.apache.ant:ant-launcher:1.9.15
+     |              |    +--- org.codehaus.groovy:groovy-groovydoc:2.5.14
+     |              |    |    +--- org.codehaus.groovy:groovy-templates:2.5.14
+     |              |    |    |    +--- org.codehaus.groovy:groovy:2.5.14
+     |              |    |    |    \--- org.codehaus.groovy:groovy-xml:2.5.14
+     |              |    |    |         \--- org.codehaus.groovy:groovy:2.5.14
+     |              |    |    +--- org.codehaus.groovy:groovy:2.5.14
+     |              |    |    +--- org.codehaus.groovy:groovy-cli-picocli:2.5.14
+     |              |    |    |    +--- org.codehaus.groovy:groovy:2.5.14
+     |              |    |    |    \--- info.picocli:picocli:4.3.2
+     |              |    |    \--- org.codehaus.groovy:groovy-docgenerator:2.5.14
+     |              |    |         +--- org.codehaus.groovy:groovy-templates:2.5.14 (*)
+     |              |    |         +--- org.codehaus.groovy:groovy:2.5.14
+     |              |    |         +--- org.codehaus.groovy:groovy-cli-picocli:2.5.14 (*)
+     |              |    |         \--- com.thoughtworks.qdox:qdox:1.12.1
+     |              |    +--- org.apache.ant:ant-junit:1.9.15
+     |              |    |    \--- org.apache.ant:ant:1.9.15 (*)
+     |              |    +--- org.apache.ant:ant-launcher:1.9.15
+     |              |    \--- org.apache.ant:ant-antlr:1.9.15
+     |              +--- org.codehaus.groovy:groovy-groovydoc:2.5.14 (*)
+     |              +--- org.codehaus.groovy:groovy-templates:2.5.14 (*)
+     |              \--- org.slf4j:slf4j-api:1.7.30
+     +--- javax.servlet:servlet-api:2.5
+     +--- org.eclipse.jetty:jetty-server:7.6.21.v20160908
+     |    +--- org.eclipse.jetty:jetty-continuation:7.6.21.v20160908
+     |    \--- org.eclipse.jetty:jetty-http:7.6.21.v20160908
+     |         \--- org.eclipse.jetty:jetty-io:7.6.21.v20160908
+     |              \--- org.eclipse.jetty:jetty-util:7.6.21.v20160908
+     +--- org.eclipse.jetty:jetty-servlet:7.6.21.v20160908
+     |    \--- org.eclipse.jetty:jetty-security:7.6.21.v20160908
+     |         \--- org.eclipse.jetty:jetty-server:7.6.21.v20160908 (*)
+     +--- org.eclipse.jetty:jetty-webapp:7.6.21.v20160908
+     |    +--- org.eclipse.jetty:jetty-xml:7.6.21.v20160908
+     |    |    \--- org.eclipse.jetty:jetty-util:7.6.21.v20160908
+     |    \--- org.eclipse.jetty:jetty-servlet:7.6.21.v20160908 (*)
+     +--- org.eclipse.jetty:jetty-security:7.6.21.v20160908 (*)
+     +--- org.eclipse.jetty:jetty-jsp:7.6.21.v20160908
+     |    +--- org.eclipse.jetty.orbit:javax.servlet.jsp:2.1.0.v201105211820
+     |    +--- org.eclipse.jetty.orbit:org.apache.jasper.glassfish:2.1.0.v201110031002
+     |    |    \--- org.eclipse.jetty.orbit:javax.servlet.jsp:2.1.0.v201105211820
+     |    +--- org.eclipse.jetty.orbit:javax.servlet.jsp.jstl:1.2.0.v201105211821
+     |    |    \--- org.eclipse.jetty.orbit:javax.servlet.jsp:2.1.0.v201105211820
+     |    +--- org.eclipse.jetty.orbit:org.apache.taglibs.standard.glassfish:1.2.0.v201112081803
+     |    |    \--- org.eclipse.jetty.orbit:javax.servlet.jsp.jstl:1.2.0.v201105211821 (*)
+     |    +--- org.eclipse.jetty.orbit:javax.el:2.1.0.v201105211819
+     |    +--- org.eclipse.jetty.orbit:com.sun.el:1.0.0.v201105211818
+     |    \--- org.eclipse.jetty.orbit:org.eclipse.jdt.core:3.7.1
+     \--- org.eclipse.jetty:jetty-plus:7.6.21.v20160908
+          +--- org.eclipse.jetty.orbit:javax.transaction:1.1.1.v201105210645
+          +--- org.eclipse.jetty:jetty-webapp:7.6.21.v20160908 (*)
+          \--- org.eclipse.jetty:jetty-jndi:7.6.21.v20160908
+               +--- org.eclipse.jetty:jetty-server:7.6.21.v20160908 (*)
+               \--- org.eclipse.jetty.orbit:javax.mail.glassfish:1.4.1.v201005082020
+                    \--- org.eclipse.jetty.orbit:javax.activation:1.1.0.v201105071233
+
+grettyRunnerJetty8
+\--- org.gretty:gretty-runner-jetty8:3.0.4
+     +--- org.gretty:gretty-runner-jetty:3.0.4
+     |    \--- org.gretty:gretty-runner:3.0.4
+     |         +--- org.codehaus.groovy:groovy:2.5.14
+     |         +--- org.codehaus.groovy:groovy-cli-commons:2.5.14
+     |         |    +--- org.codehaus.groovy:groovy:2.5.14
+     |         |    \--- commons-cli:commons-cli:1.4
+     |         +--- org.codehaus.groovy:groovy-json:2.5.14
+     |         |    \--- org.codehaus.groovy:groovy:2.5.14
+     |         +--- commons-cli:commons-cli:1.3.1 -> 1.4
+     |         +--- commons-io:commons-io:2.4
+     |         +--- ch.qos.logback:logback-classic:1.1.3
+     |         |    +--- ch.qos.logback:logback-core:1.1.3
+     |         |    \--- org.slf4j:slf4j-api:1.7.7 -> 1.7.30
+     |         \--- org.gretty:gretty-common:3.0.4
+     |              +--- org.codehaus.groovy:groovy:2.5.14
+     |              +--- org.codehaus.groovy:groovy-ant:2.5.14
+     |              |    +--- org.codehaus.groovy:groovy:2.5.14
+     |              |    +--- org.apache.ant:ant:1.9.15
+     |              |    |    \--- org.apache.ant:ant-launcher:1.9.15
+     |              |    +--- org.codehaus.groovy:groovy-groovydoc:2.5.14
+     |              |    |    +--- org.codehaus.groovy:groovy-templates:2.5.14
+     |              |    |    |    +--- org.codehaus.groovy:groovy:2.5.14
+     |              |    |    |    \--- org.codehaus.groovy:groovy-xml:2.5.14
+     |              |    |    |         \--- org.codehaus.groovy:groovy:2.5.14
+     |              |    |    +--- org.codehaus.groovy:groovy:2.5.14
+     |              |    |    +--- org.codehaus.groovy:groovy-cli-picocli:2.5.14
+     |              |    |    |    +--- org.codehaus.groovy:groovy:2.5.14
+     |              |    |    |    \--- info.picocli:picocli:4.3.2
+     |              |    |    \--- org.codehaus.groovy:groovy-docgenerator:2.5.14
+     |              |    |         +--- org.codehaus.groovy:groovy-templates:2.5.14 (*)
+     |              |    |         +--- org.codehaus.groovy:groovy:2.5.14
+     |              |    |         +--- org.codehaus.groovy:groovy-cli-picocli:2.5.14 (*)
+     |              |    |         \--- com.thoughtworks.qdox:qdox:1.12.1
+     |              |    +--- org.apache.ant:ant-junit:1.9.15
+     |              |    |    \--- org.apache.ant:ant:1.9.15 (*)
+     |              |    +--- org.apache.ant:ant-launcher:1.9.15
+     |              |    \--- org.apache.ant:ant-antlr:1.9.15
+     |              +--- org.codehaus.groovy:groovy-groovydoc:2.5.14 (*)
+     |              +--- org.codehaus.groovy:groovy-templates:2.5.14 (*)
+     |              \--- org.slf4j:slf4j-api:1.7.30
+     +--- javax.servlet:javax.servlet-api:3.0.1
+     +--- org.eclipse.jetty:jetty-server:8.1.22.v20160922
+     |    +--- org.eclipse.jetty:jetty-continuation:8.1.22.v20160922
+     |    \--- org.eclipse.jetty:jetty-http:8.1.22.v20160922
+     |         \--- org.eclipse.jetty:jetty-io:8.1.22.v20160922
+     |              \--- org.eclipse.jetty:jetty-util:8.1.22.v20160922
+     +--- org.eclipse.jetty:jetty-servlet:8.1.22.v20160922
+     |    \--- org.eclipse.jetty:jetty-security:8.1.22.v20160922
+     |         \--- org.eclipse.jetty:jetty-server:8.1.22.v20160922 (*)
+     +--- org.eclipse.jetty:jetty-webapp:8.1.22.v20160922
+     |    +--- org.eclipse.jetty:jetty-xml:8.1.22.v20160922
+     |    |    \--- org.eclipse.jetty:jetty-util:8.1.22.v20160922
+     |    \--- org.eclipse.jetty:jetty-servlet:8.1.22.v20160922 (*)
+     +--- org.eclipse.jetty:jetty-security:8.1.22.v20160922 (*)
+     +--- org.eclipse.jetty:jetty-jsp:8.1.22.v20160922
+     |    +--- org.eclipse.jetty.orbit:javax.servlet.jsp:2.2.0.v201112011158
+     |    +--- org.eclipse.jetty.orbit:org.apache.jasper.glassfish:2.2.2.v201112011158
+     |    |    \--- org.eclipse.jetty.orbit:javax.servlet.jsp:2.2.0.v201112011158
+     |    +--- org.eclipse.jetty.orbit:javax.servlet.jsp.jstl:1.2.0.v201105211821
+     |    |    \--- org.eclipse.jetty.orbit:javax.servlet.jsp:2.1.0.v201105211820 -> 2.2.0.v201112011158
+     |    +--- org.eclipse.jetty.orbit:org.apache.taglibs.standard.glassfish:1.2.0.v201112081803
+     |    |    \--- org.eclipse.jetty.orbit:javax.servlet.jsp.jstl:1.2.0.v201105211821 (*)
+     |    +--- org.eclipse.jetty.orbit:javax.el:2.2.0.v201108011116
+     |    +--- org.eclipse.jetty.orbit:com.sun.el:2.2.0.v201108011116
+     |    \--- org.eclipse.jetty.orbit:org.eclipse.jdt.core:3.7.1
+     +--- org.eclipse.jetty:jetty-annotations:8.1.22.v20160922
+     |    +--- org.eclipse.jetty:jetty-plus:8.1.22.v20160922
+     |    |    +--- org.eclipse.jetty.orbit:javax.transaction:1.1.1.v201105210645
+     |    |    +--- org.eclipse.jetty:jetty-webapp:8.1.22.v20160922 (*)
+     |    |    \--- org.eclipse.jetty:jetty-jndi:8.1.22.v20160922
+     |    |         +--- org.eclipse.jetty:jetty-server:8.1.22.v20160922 (*)
+     |    |         \--- org.eclipse.jetty.orbit:javax.mail.glassfish:1.4.1.v201005082020
+     |    |              \--- org.eclipse.jetty.orbit:javax.activation:1.1.0.v201105071233
+     |    +--- org.eclipse.jetty:jetty-webapp:8.1.22.v20160922 (*)
+     |    +--- org.eclipse.jetty.orbit:javax.annotation:1.1.0.v201108011116
+     |    \--- org.eclipse.jetty.orbit:org.objectweb.asm:3.1.0.v200803061910
+     \--- org.eclipse.jetty:jetty-plus:8.1.22.v20160922 (*)
+
+grettyRunnerJetty9
+\--- org.gretty:gretty-runner-jetty9:3.0.4
+     +--- org.gretty:gretty-runner-jetty:3.0.4
+     |    \--- org.gretty:gretty-runner:3.0.4
+     |         +--- org.codehaus.groovy:groovy:2.5.14
+     |         +--- org.codehaus.groovy:groovy-cli-commons:2.5.14
+     |         |    +--- org.codehaus.groovy:groovy:2.5.14
+     |         |    \--- commons-cli:commons-cli:1.4
+     |         +--- org.codehaus.groovy:groovy-json:2.5.14
+     |         |    \--- org.codehaus.groovy:groovy:2.5.14
+     |         +--- commons-cli:commons-cli:1.3.1 -> 1.4
+     |         +--- commons-io:commons-io:2.4
+     |         +--- ch.qos.logback:logback-classic:1.1.3
+     |         |    +--- ch.qos.logback:logback-core:1.1.3
+     |         |    \--- org.slf4j:slf4j-api:1.7.7 -> 1.7.30
+     |         \--- org.gretty:gretty-common:3.0.4
+     |              +--- org.codehaus.groovy:groovy:2.5.14
+     |              +--- org.codehaus.groovy:groovy-ant:2.5.14
+     |              |    +--- org.codehaus.groovy:groovy:2.5.14
+     |              |    +--- org.apache.ant:ant:1.9.15
+     |              |    |    \--- org.apache.ant:ant-launcher:1.9.15
+     |              |    +--- org.codehaus.groovy:groovy-groovydoc:2.5.14
+     |              |    |    +--- org.codehaus.groovy:groovy-templates:2.5.14
+     |              |    |    |    +--- org.codehaus.groovy:groovy:2.5.14
+     |              |    |    |    \--- org.codehaus.groovy:groovy-xml:2.5.14
+     |              |    |    |         \--- org.codehaus.groovy:groovy:2.5.14
+     |              |    |    +--- org.codehaus.groovy:groovy:2.5.14
+     |              |    |    +--- org.codehaus.groovy:groovy-cli-picocli:2.5.14
+     |              |    |    |    +--- org.codehaus.groovy:groovy:2.5.14
+     |              |    |    |    \--- info.picocli:picocli:4.3.2
+     |              |    |    \--- org.codehaus.groovy:groovy-docgenerator:2.5.14
+     |              |    |         +--- org.codehaus.groovy:groovy-templates:2.5.14 (*)
+     |              |    |         +--- org.codehaus.groovy:groovy:2.5.14
+     |              |    |         +--- org.codehaus.groovy:groovy-cli-picocli:2.5.14 (*)
+     |              |    |         \--- com.thoughtworks.qdox:qdox:1.12.1
+     |              |    +--- org.apache.ant:ant-junit:1.9.15
+     |              |    |    \--- org.apache.ant:ant:1.9.15 (*)
+     |              |    +--- org.apache.ant:ant-launcher:1.9.15
+     |              |    \--- org.apache.ant:ant-antlr:1.9.15
+     |              +--- org.codehaus.groovy:groovy-groovydoc:2.5.14 (*)
+     |              +--- org.codehaus.groovy:groovy-templates:2.5.14 (*)
+     |              \--- org.slf4j:slf4j-api:1.7.30
+     +--- javax.servlet:javax.servlet-api:3.1.0
+     +--- org.eclipse.jetty:jetty-server:9.2.26.v20180806
+     |    +--- javax.servlet:javax.servlet-api:3.1.0
+     |    +--- org.eclipse.jetty:jetty-http:9.2.26.v20180806
+     |    |    \--- org.eclipse.jetty:jetty-util:9.2.26.v20180806
+     |    \--- org.eclipse.jetty:jetty-io:9.2.26.v20180806
+     |         \--- org.eclipse.jetty:jetty-util:9.2.26.v20180806
+     +--- org.eclipse.jetty:jetty-servlet:9.2.26.v20180806
+     |    \--- org.eclipse.jetty:jetty-security:9.2.26.v20180806
+     |         \--- org.eclipse.jetty:jetty-server:9.2.26.v20180806 (*)
+     +--- org.eclipse.jetty:jetty-webapp:9.2.26.v20180806
+     |    +--- org.eclipse.jetty:jetty-xml:9.2.26.v20180806
+     |    |    \--- org.eclipse.jetty:jetty-util:9.2.26.v20180806
+     |    \--- org.eclipse.jetty:jetty-servlet:9.2.26.v20180806 (*)
+     +--- org.eclipse.jetty:jetty-security:9.2.26.v20180806 (*)
+     +--- org.eclipse.jetty:jetty-jsp:9.2.26.v20180806
+     |    +--- org.eclipse.jetty.toolchain:jetty-schemas:3.1.M0
+     |    +--- javax.servlet:javax.servlet-api:3.1.0
+     |    +--- javax.servlet.jsp:javax.servlet.jsp-api:2.3.1
+     |    +--- org.glassfish.web:javax.servlet.jsp:2.3.2
+     |    |    +--- org.glassfish:javax.el:[3.0.0,) -> 3.0.0
+     |    |    \--- javax.servlet.jsp:javax.servlet.jsp-api:2.3.1
+     |    +--- org.eclipse.jetty.orbit:javax.servlet.jsp.jstl:1.2.0.v201105211821
+     |    +--- org.glassfish.web:javax.servlet.jsp.jstl:1.2.2
+     |    +--- org.glassfish:javax.el:3.0.0
+     |    \--- org.eclipse.jetty.orbit:org.eclipse.jdt.core:3.8.2.v20130121
+     +--- org.eclipse.jetty:jetty-annotations:9.2.26.v20180806
+     |    +--- org.eclipse.jetty:jetty-plus:9.2.26.v20180806
+     |    |    +--- org.eclipse.jetty:jetty-webapp:9.2.26.v20180806 (*)
+     |    |    \--- org.eclipse.jetty:jetty-jndi:9.2.26.v20180806
+     |    |         \--- org.eclipse.jetty:jetty-util:9.2.26.v20180806
+     |    +--- org.eclipse.jetty:jetty-webapp:9.2.26.v20180806 (*)
+     |    +--- javax.annotation:javax.annotation-api:1.2
+     |    +--- org.ow2.asm:asm:5.0.1 -> 9.1
+     |    \--- org.ow2.asm:asm-commons:5.0.1 -> 9.1
+     |         +--- org.ow2.asm:asm:9.1
+     |         +--- org.ow2.asm:asm-tree:9.1
+     |         |    \--- org.ow2.asm:asm:9.1
+     |         \--- org.ow2.asm:asm-analysis:9.1
+     |              \--- org.ow2.asm:asm-tree:9.1 (*)
+     +--- org.eclipse.jetty:jetty-plus:9.2.26.v20180806 (*)
+     +--- org.eclipse.jetty.websocket:javax-websocket-server-impl:9.2.26.v20180806
+     |    +--- org.eclipse.jetty:jetty-annotations:9.2.26.v20180806 (*)
+     |    +--- org.eclipse.jetty.websocket:javax-websocket-client-impl:9.2.26.v20180806
+     |    |    +--- org.eclipse.jetty.websocket:websocket-client:9.2.26.v20180806
+     |    |    |    +--- org.eclipse.jetty:jetty-util:9.2.26.v20180806
+     |    |    |    +--- org.eclipse.jetty:jetty-io:9.2.26.v20180806 (*)
+     |    |    |    \--- org.eclipse.jetty.websocket:websocket-common:9.2.26.v20180806
+     |    |    |         +--- org.eclipse.jetty.websocket:websocket-api:9.2.26.v20180806
+     |    |    |         +--- org.eclipse.jetty:jetty-util:9.2.26.v20180806
+     |    |    |         \--- org.eclipse.jetty:jetty-io:9.2.26.v20180806 (*)
+     |    |    \--- javax.websocket:javax.websocket-api:1.0
+     |    +--- org.eclipse.jetty.websocket:websocket-server:9.2.26.v20180806
+     |    |    +--- org.eclipse.jetty.websocket:websocket-common:9.2.26.v20180806 (*)
+     |    |    +--- org.eclipse.jetty.websocket:websocket-client:9.2.26.v20180806 (*)
+     |    |    +--- org.eclipse.jetty.websocket:websocket-servlet:9.2.26.v20180806
+     |    |    |    +--- org.eclipse.jetty.websocket:websocket-api:9.2.26.v20180806
+     |    |    |    \--- javax.servlet:javax.servlet-api:3.1.0
+     |    |    +--- org.eclipse.jetty:jetty-servlet:9.2.26.v20180806 (*)
+     |    |    \--- org.eclipse.jetty:jetty-http:9.2.26.v20180806 (*)
+     |    \--- javax.websocket:javax.websocket-api:1.0
+     +--- org.ow2.asm:asm:9.1
+     \--- org.ow2.asm:asm-commons:9.1 (*)
+
+grettyRunnerJetty93
+\--- org.gretty:gretty-runner-jetty93:3.0.4
+     +--- org.gretty:gretty-runner-jetty:3.0.4
+     |    \--- org.gretty:gretty-runner:3.0.4
+     |         +--- org.codehaus.groovy:groovy:2.5.14
+     |         +--- org.codehaus.groovy:groovy-cli-commons:2.5.14
+     |         |    +--- org.codehaus.groovy:groovy:2.5.14
+     |         |    \--- commons-cli:commons-cli:1.4
+     |         +--- org.codehaus.groovy:groovy-json:2.5.14
+     |         |    \--- org.codehaus.groovy:groovy:2.5.14
+     |         +--- commons-cli:commons-cli:1.3.1 -> 1.4
+     |         +--- commons-io:commons-io:2.4
+     |         +--- ch.qos.logback:logback-classic:1.1.3
+     |         |    +--- ch.qos.logback:logback-core:1.1.3
+     |         |    \--- org.slf4j:slf4j-api:1.7.7 -> 1.7.30
+     |         \--- org.gretty:gretty-common:3.0.4
+     |              +--- org.codehaus.groovy:groovy:2.5.14
+     |              +--- org.codehaus.groovy:groovy-ant:2.5.14
+     |              |    +--- org.codehaus.groovy:groovy:2.5.14
+     |              |    +--- org.apache.ant:ant:1.9.15
+     |              |    |    \--- org.apache.ant:ant-launcher:1.9.15
+     |              |    +--- org.codehaus.groovy:groovy-groovydoc:2.5.14
+     |              |    |    +--- org.codehaus.groovy:groovy-templates:2.5.14
+     |              |    |    |    +--- org.codehaus.groovy:groovy:2.5.14
+     |              |    |    |    \--- org.codehaus.groovy:groovy-xml:2.5.14
+     |              |    |    |         \--- org.codehaus.groovy:groovy:2.5.14
+     |              |    |    +--- org.codehaus.groovy:groovy:2.5.14
+     |              |    |    +--- org.codehaus.groovy:groovy-cli-picocli:2.5.14
+     |              |    |    |    +--- org.codehaus.groovy:groovy:2.5.14
+     |              |    |    |    \--- info.picocli:picocli:4.3.2
+     |              |    |    \--- org.codehaus.groovy:groovy-docgenerator:2.5.14
+     |              |    |         +--- org.codehaus.groovy:groovy-templates:2.5.14 (*)
+     |              |    |         +--- org.codehaus.groovy:groovy:2.5.14
+     |              |    |         +--- org.codehaus.groovy:groovy-cli-picocli:2.5.14 (*)
+     |              |    |         \--- com.thoughtworks.qdox:qdox:1.12.1
+     |              |    +--- org.apache.ant:ant-junit:1.9.15
+     |              |    |    \--- org.apache.ant:ant:1.9.15 (*)
+     |              |    +--- org.apache.ant:ant-launcher:1.9.15
+     |              |    \--- org.apache.ant:ant-antlr:1.9.15
+     |              +--- org.codehaus.groovy:groovy-groovydoc:2.5.14 (*)
+     |              +--- org.codehaus.groovy:groovy-templates:2.5.14 (*)
+     |              \--- org.slf4j:slf4j-api:1.7.30
+     +--- javax.servlet:javax.servlet-api:3.1.0
+     +--- org.eclipse.jetty:jetty-server:9.3.28.v20191105
+     |    +--- javax.servlet:javax.servlet-api:3.1.0
+     |    +--- org.eclipse.jetty:jetty-http:9.3.28.v20191105
+     |    |    \--- org.eclipse.jetty:jetty-util:9.3.28.v20191105
+     |    \--- org.eclipse.jetty:jetty-io:9.3.28.v20191105
+     |         \--- org.eclipse.jetty:jetty-util:9.3.28.v20191105
+     +--- org.eclipse.jetty:jetty-servlet:9.3.28.v20191105
+     |    \--- org.eclipse.jetty:jetty-security:9.3.28.v20191105
+     |         \--- org.eclipse.jetty:jetty-server:9.3.28.v20191105 (*)
+     +--- org.eclipse.jetty:jetty-webapp:9.3.28.v20191105
+     |    +--- org.eclipse.jetty:jetty-xml:9.3.28.v20191105
+     |    |    \--- org.eclipse.jetty:jetty-util:9.3.28.v20191105
+     |    \--- org.eclipse.jetty:jetty-servlet:9.3.28.v20191105 (*)
+     +--- org.eclipse.jetty:jetty-security:9.3.28.v20191105 (*)
+     +--- org.eclipse.jetty:apache-jsp:9.3.28.v20191105
+     |    +--- org.eclipse.jetty:jetty-util:9.3.28.v20191105
+     |    +--- org.eclipse.jetty.toolchain:jetty-schemas:3.1
+     |    +--- javax.servlet:javax.servlet-api:3.1.0
+     |    +--- org.mortbay.jasper:apache-jsp:8.0.33
+     |    |    +--- org.eclipse.jetty.toolchain:jetty-schemas:3.1.M0 -> 3.1
+     |    |    \--- org.mortbay.jasper:apache-el:8.0.33
+     |    \--- org.eclipse.jdt.core.compiler:ecj:4.4.2
+     +--- org.eclipse.jetty:jetty-annotations:9.3.28.v20191105
+     |    +--- org.eclipse.jetty:jetty-plus:9.3.28.v20191105
+     |    |    +--- org.eclipse.jetty:jetty-webapp:9.3.28.v20191105 (*)
+     |    |    \--- org.eclipse.jetty:jetty-jndi:9.3.28.v20191105
+     |    |         \--- org.eclipse.jetty:jetty-util:9.3.28.v20191105
+     |    +--- org.eclipse.jetty:jetty-webapp:9.3.28.v20191105 (*)
+     |    +--- javax.annotation:javax.annotation-api:1.2
+     |    +--- org.ow2.asm:asm:6.0 -> 9.1
+     |    \--- org.ow2.asm:asm-commons:6.0 -> 9.1
+     |         +--- org.ow2.asm:asm:9.1
+     |         +--- org.ow2.asm:asm-tree:9.1
+     |         |    \--- org.ow2.asm:asm:9.1
+     |         \--- org.ow2.asm:asm-analysis:9.1
+     |              \--- org.ow2.asm:asm-tree:9.1 (*)
+     +--- org.eclipse.jetty:jetty-plus:9.3.28.v20191105 (*)
+     +--- org.eclipse.jetty.websocket:javax-websocket-server-impl:9.3.28.v20191105
+     |    +--- org.eclipse.jetty:jetty-annotations:9.3.28.v20191105 (*)
+     |    +--- org.eclipse.jetty.websocket:javax-websocket-client-impl:9.3.28.v20191105
+     |    |    +--- org.eclipse.jetty.websocket:websocket-client:9.3.28.v20191105
+     |    |    |    +--- org.eclipse.jetty:jetty-util:9.3.28.v20191105
+     |    |    |    +--- org.eclipse.jetty:jetty-io:9.3.28.v20191105 (*)
+     |    |    |    \--- org.eclipse.jetty.websocket:websocket-common:9.3.28.v20191105
+     |    |    |         +--- org.eclipse.jetty.websocket:websocket-api:9.3.28.v20191105
+     |    |    |         +--- org.eclipse.jetty:jetty-util:9.3.28.v20191105
+     |    |    |         \--- org.eclipse.jetty:jetty-io:9.3.28.v20191105 (*)
+     |    |    \--- javax.websocket:javax.websocket-api:1.0
+     |    +--- org.eclipse.jetty.websocket:websocket-server:9.3.28.v20191105
+     |    |    +--- org.eclipse.jetty.websocket:websocket-common:9.3.28.v20191105 (*)
+     |    |    +--- org.eclipse.jetty.websocket:websocket-client:9.3.28.v20191105 (*)
+     |    |    +--- org.eclipse.jetty.websocket:websocket-servlet:9.3.28.v20191105
+     |    |    |    +--- org.eclipse.jetty.websocket:websocket-api:9.3.28.v20191105
+     |    |    |    \--- javax.servlet:javax.servlet-api:3.1.0
+     |    |    +--- org.eclipse.jetty:jetty-servlet:9.3.28.v20191105 (*)
+     |    |    \--- org.eclipse.jetty:jetty-http:9.3.28.v20191105 (*)
+     |    \--- javax.websocket:javax.websocket-api:1.0
+     +--- org.ow2.asm:asm:9.1
+     \--- org.ow2.asm:asm-commons:9.1 (*)
+
+grettyRunnerJetty94
+\--- org.gretty:gretty-runner-jetty94:3.0.4
+     +--- org.gretty:gretty-runner-jetty:3.0.4
+     |    \--- org.gretty:gretty-runner:3.0.4
+     |         +--- org.codehaus.groovy:groovy:2.5.14
+     |         +--- org.codehaus.groovy:groovy-cli-commons:2.5.14
+     |         |    +--- org.codehaus.groovy:groovy:2.5.14
+     |         |    \--- commons-cli:commons-cli:1.4
+     |         +--- org.codehaus.groovy:groovy-json:2.5.14
+     |         |    \--- org.codehaus.groovy:groovy:2.5.14
+     |         +--- commons-cli:commons-cli:1.3.1 -> 1.4
+     |         +--- commons-io:commons-io:2.4
+     |         +--- ch.qos.logback:logback-classic:1.1.3
+     |         |    +--- ch.qos.logback:logback-core:1.1.3
+     |         |    \--- org.slf4j:slf4j-api:1.7.7 -> 1.7.30
+     |         \--- org.gretty:gretty-common:3.0.4
+     |              +--- org.codehaus.groovy:groovy:2.5.14
+     |              +--- org.codehaus.groovy:groovy-ant:2.5.14
+     |              |    +--- org.codehaus.groovy:groovy:2.5.14
+     |              |    +--- org.apache.ant:ant:1.9.15
+     |              |    |    \--- org.apache.ant:ant-launcher:1.9.15
+     |              |    +--- org.codehaus.groovy:groovy-groovydoc:2.5.14
+     |              |    |    +--- org.codehaus.groovy:groovy-templates:2.5.14
+     |              |    |    |    +--- org.codehaus.groovy:groovy:2.5.14
+     |              |    |    |    \--- org.codehaus.groovy:groovy-xml:2.5.14
+     |              |    |    |         \--- org.codehaus.groovy:groovy:2.5.14
+     |              |    |    +--- org.codehaus.groovy:groovy:2.5.14
+     |              |    |    +--- org.codehaus.groovy:groovy-cli-picocli:2.5.14
+     |              |    |    |    +--- org.codehaus.groovy:groovy:2.5.14
+     |              |    |    |    \--- info.picocli:picocli:4.3.2
+     |              |    |    \--- org.codehaus.groovy:groovy-docgenerator:2.5.14
+     |              |    |         +--- org.codehaus.groovy:groovy-templates:2.5.14 (*)
+     |              |    |         +--- org.codehaus.groovy:groovy:2.5.14
+     |              |    |         +--- org.codehaus.groovy:groovy-cli-picocli:2.5.14 (*)
+     |              |    |         \--- com.thoughtworks.qdox:qdox:1.12.1
+     |              |    +--- org.apache.ant:ant-junit:1.9.15
+     |              |    |    \--- org.apache.ant:ant:1.9.15 (*)
+     |              |    +--- org.apache.ant:ant-launcher:1.9.15
+     |              |    \--- org.apache.ant:ant-antlr:1.9.15
+     |              +--- org.codehaus.groovy:groovy-groovydoc:2.5.14 (*)
+     |              +--- org.codehaus.groovy:groovy-templates:2.5.14 (*)
+     |              \--- org.slf4j:slf4j-api:1.7.30
+     +--- javax.servlet:javax.servlet-api:3.1.0
+     +--- org.eclipse.jetty:jetty-server:9.4.24.v20191120
+     |    +--- javax.servlet:javax.servlet-api:3.1.0
+     |    +--- org.eclipse.jetty:jetty-http:9.4.24.v20191120
+     |    |    +--- org.eclipse.jetty:jetty-util:9.4.24.v20191120
+     |    |    \--- org.eclipse.jetty:jetty-io:9.4.24.v20191120
+     |    |         \--- org.eclipse.jetty:jetty-util:9.4.24.v20191120
+     |    \--- org.eclipse.jetty:jetty-io:9.4.24.v20191120 (*)
+     +--- org.eclipse.jetty:jetty-servlet:9.4.24.v20191120
+     |    \--- org.eclipse.jetty:jetty-security:9.4.24.v20191120
+     |         \--- org.eclipse.jetty:jetty-server:9.4.24.v20191120 (*)
+     +--- org.eclipse.jetty:jetty-webapp:9.4.24.v20191120
+     |    +--- org.eclipse.jetty:jetty-xml:9.4.24.v20191120
+     |    |    \--- org.eclipse.jetty:jetty-util:9.4.24.v20191120
+     |    \--- org.eclipse.jetty:jetty-servlet:9.4.24.v20191120 (*)
+     +--- org.eclipse.jetty:jetty-security:9.4.24.v20191120 (*)
+     +--- org.eclipse.jetty:apache-jsp:9.4.24.v20191120
+     |    +--- org.eclipse.jetty:jetty-util:9.4.24.v20191120
+     |    +--- org.eclipse.jetty.toolchain:jetty-schemas:3.1.2
+     |    +--- javax.servlet:javax.servlet-api:3.1.0
+     |    +--- org.mortbay.jasper:apache-jsp:8.5.40
+     |    |    +--- org.eclipse.jetty.toolchain:jetty-schemas:3.1.2
+     |    |    +--- org.mortbay.jasper:apache-el:8.5.40
+     |    |    \--- org.eclipse.jdt:ecj:3.17.0
+     |    \--- org.eclipse.jetty:jetty-annotations:9.4.24.v20191120
+     |         +--- org.eclipse.jetty:jetty-plus:9.4.24.v20191120
+     |         |    +--- org.eclipse.jetty:jetty-webapp:9.4.24.v20191120 (*)
+     |         |    \--- org.eclipse.jetty:jetty-jndi:9.4.24.v20191120
+     |         |         \--- org.eclipse.jetty:jetty-util:9.4.24.v20191120
+     |         +--- org.eclipse.jetty:jetty-webapp:9.4.24.v20191120 (*)
+     |         +--- javax.annotation:javax.annotation-api:1.3
+     |         +--- org.ow2.asm:asm:7.2 -> 9.1
+     |         \--- org.ow2.asm:asm-commons:7.2 -> 9.1
+     |              +--- org.ow2.asm:asm:9.1
+     |              +--- org.ow2.asm:asm-tree:9.1
+     |              |    \--- org.ow2.asm:asm:9.1
+     |              \--- org.ow2.asm:asm-analysis:9.1
+     |                   \--- org.ow2.asm:asm-tree:9.1 (*)
+     +--- org.eclipse.jetty:jetty-annotations:9.4.24.v20191120 (*)
+     +--- org.eclipse.jetty:jetty-plus:9.4.24.v20191120 (*)
+     +--- org.eclipse.jetty.websocket:javax-websocket-server-impl:9.4.24.v20191120
+     |    +--- org.eclipse.jetty:jetty-annotations:9.4.24.v20191120 (*)
+     |    +--- org.eclipse.jetty.websocket:javax-websocket-client-impl:9.4.24.v20191120
+     |    |    +--- org.eclipse.jetty.websocket:websocket-client:9.4.24.v20191120
+     |    |    |    +--- org.eclipse.jetty:jetty-client:9.4.24.v20191120
+     |    |    |    |    +--- org.eclipse.jetty:jetty-http:9.4.24.v20191120 (*)
+     |    |    |    |    \--- org.eclipse.jetty:jetty-io:9.4.24.v20191120 (*)
+     |    |    |    +--- org.eclipse.jetty:jetty-xml:9.4.24.v20191120 (*)
+     |    |    |    +--- org.eclipse.jetty:jetty-util:9.4.24.v20191120
+     |    |    |    +--- org.eclipse.jetty:jetty-io:9.4.24.v20191120 (*)
+     |    |    |    \--- org.eclipse.jetty.websocket:websocket-common:9.4.24.v20191120
+     |    |    |         +--- org.eclipse.jetty.websocket:websocket-api:9.4.24.v20191120
+     |    |    |         +--- org.eclipse.jetty:jetty-util:9.4.24.v20191120
+     |    |    |         \--- org.eclipse.jetty:jetty-io:9.4.24.v20191120 (*)
+     |    |    \--- javax.websocket:javax.websocket-client-api:1.0
+     |    +--- org.eclipse.jetty.websocket:websocket-server:9.4.24.v20191120
+     |    |    +--- org.eclipse.jetty.websocket:websocket-common:9.4.24.v20191120 (*)
+     |    |    +--- org.eclipse.jetty.websocket:websocket-client:9.4.24.v20191120 (*)
+     |    |    +--- org.eclipse.jetty.websocket:websocket-servlet:9.4.24.v20191120
+     |    |    |    +--- org.eclipse.jetty.websocket:websocket-api:9.4.24.v20191120
+     |    |    |    \--- javax.servlet:javax.servlet-api:3.1.0
+     |    |    +--- org.eclipse.jetty:jetty-servlet:9.4.24.v20191120 (*)
+     |    |    \--- org.eclipse.jetty:jetty-http:9.4.24.v20191120 (*)
+     |    \--- javax.websocket:javax.websocket-api:1.0
+     +--- org.ow2.asm:asm:9.1
+     \--- org.ow2.asm:asm-commons:9.1 (*)
+
+grettyRunnerTomcat85
+\--- org.gretty:gretty-runner-tomcat85:3.0.4
+     +--- org.gretty:gretty-runner-tomcat8plus:3.0.4
+     |    \--- org.gretty:gretty-runner-tomcat:3.0.4
+     |         +--- org.gretty:gretty-runner:3.0.4
+     |         |    +--- org.codehaus.groovy:groovy:2.5.14
+     |         |    +--- org.codehaus.groovy:groovy-cli-commons:2.5.14
+     |         |    |    +--- org.codehaus.groovy:groovy:2.5.14
+     |         |    |    \--- commons-cli:commons-cli:1.4
+     |         |    +--- org.codehaus.groovy:groovy-json:2.5.14
+     |         |    |    \--- org.codehaus.groovy:groovy:2.5.14
+     |         |    +--- commons-cli:commons-cli:1.3.1 -> 1.4
+     |         |    +--- commons-io:commons-io:2.4
+     |         |    +--- ch.qos.logback:logback-classic:1.1.3
+     |         |    |    +--- ch.qos.logback:logback-core:1.1.3
+     |         |    |    \--- org.slf4j:slf4j-api:1.7.7 -> 1.7.30
+     |         |    \--- org.gretty:gretty-common:3.0.4
+     |         |         +--- org.codehaus.groovy:groovy:2.5.14
+     |         |         +--- org.codehaus.groovy:groovy-ant:2.5.14
+     |         |         |    +--- org.codehaus.groovy:groovy:2.5.14
+     |         |         |    +--- org.apache.ant:ant:1.9.15
+     |         |         |    |    \--- org.apache.ant:ant-launcher:1.9.15
+     |         |         |    +--- org.codehaus.groovy:groovy-groovydoc:2.5.14
+     |         |         |    |    +--- org.codehaus.groovy:groovy-templates:2.5.14
+     |         |         |    |    |    +--- org.codehaus.groovy:groovy:2.5.14
+     |         |         |    |    |    \--- org.codehaus.groovy:groovy-xml:2.5.14
+     |         |         |    |    |         \--- org.codehaus.groovy:groovy:2.5.14
+     |         |         |    |    +--- org.codehaus.groovy:groovy:2.5.14
+     |         |         |    |    +--- org.codehaus.groovy:groovy-cli-picocli:2.5.14
+     |         |         |    |    |    +--- org.codehaus.groovy:groovy:2.5.14
+     |         |         |    |    |    \--- info.picocli:picocli:4.3.2
+     |         |         |    |    \--- org.codehaus.groovy:groovy-docgenerator:2.5.14
+     |         |         |    |         +--- org.codehaus.groovy:groovy-templates:2.5.14 (*)
+     |         |         |    |         +--- org.codehaus.groovy:groovy:2.5.14
+     |         |         |    |         +--- org.codehaus.groovy:groovy-cli-picocli:2.5.14 (*)
+     |         |         |    |         \--- com.thoughtworks.qdox:qdox:1.12.1
+     |         |         |    +--- org.apache.ant:ant-junit:1.9.15
+     |         |         |    |    \--- org.apache.ant:ant:1.9.15 (*)
+     |         |         |    +--- org.apache.ant:ant-launcher:1.9.15
+     |         |         |    \--- org.apache.ant:ant-antlr:1.9.15
+     |         |         +--- org.codehaus.groovy:groovy-groovydoc:2.5.14 (*)
+     |         |         +--- org.codehaus.groovy:groovy-templates:2.5.14 (*)
+     |         |         \--- org.slf4j:slf4j-api:1.7.30
+     |         \--- org.slf4j:log4j-over-slf4j:1.7.30
+     |              \--- org.slf4j:slf4j-api:1.7.30
+     +--- org.apache.tomcat.embed:tomcat-embed-core:8.5.64
+     |    \--- org.apache.tomcat:tomcat-annotations-api:8.5.64
+     +--- org.apache.tomcat.embed:tomcat-embed-el:8.5.64
+     +--- org.apache.tomcat.embed:tomcat-embed-jasper:8.5.64
+     |    +--- org.apache.tomcat.embed:tomcat-embed-core:8.5.64 (*)
+     |    +--- org.apache.tomcat.embed:tomcat-embed-el:8.5.64
+     |    \--- org.eclipse.jdt:ecj:3.12.3
+     +--- org.apache.tomcat.embed:tomcat-embed-websocket:8.5.64
+     |    \--- org.apache.tomcat.embed:tomcat-embed-core:8.5.64 (*)
+     \--- javax.servlet:javax.servlet-api:3.1.0
+
+grettyRunnerTomcat9
+\--- org.gretty:gretty-runner-tomcat9:3.0.4
+     +--- org.gretty:gretty-runner-tomcat85:3.0.4
+     |    \--- org.gretty:gretty-runner-tomcat8plus:3.0.4
+     |         \--- org.gretty:gretty-runner-tomcat:3.0.4
+     |              +--- org.gretty:gretty-runner:3.0.4
+     |              |    +--- org.codehaus.groovy:groovy:2.5.14
+     |              |    +--- org.codehaus.groovy:groovy-cli-commons:2.5.14
+     |              |    |    +--- org.codehaus.groovy:groovy:2.5.14
+     |              |    |    \--- commons-cli:commons-cli:1.4
+     |              |    +--- org.codehaus.groovy:groovy-json:2.5.14
+     |              |    |    \--- org.codehaus.groovy:groovy:2.5.14
+     |              |    +--- commons-cli:commons-cli:1.3.1 -> 1.4
+     |              |    +--- commons-io:commons-io:2.4
+     |              |    +--- ch.qos.logback:logback-classic:1.1.3
+     |              |    |    +--- ch.qos.logback:logback-core:1.1.3
+     |              |    |    \--- org.slf4j:slf4j-api:1.7.7 -> 1.7.30
+     |              |    \--- org.gretty:gretty-common:3.0.4
+     |              |         +--- org.codehaus.groovy:groovy:2.5.14
+     |              |         +--- org.codehaus.groovy:groovy-ant:2.5.14
+     |              |         |    +--- org.codehaus.groovy:groovy:2.5.14
+     |              |         |    +--- org.apache.ant:ant:1.9.15
+     |              |         |    |    \--- org.apache.ant:ant-launcher:1.9.15
+     |              |         |    +--- org.codehaus.groovy:groovy-groovydoc:2.5.14
+     |              |         |    |    +--- org.codehaus.groovy:groovy-templates:2.5.14
+     |              |         |    |    |    +--- org.codehaus.groovy:groovy:2.5.14
+     |              |         |    |    |    \--- org.codehaus.groovy:groovy-xml:2.5.14
+     |              |         |    |    |         \--- org.codehaus.groovy:groovy:2.5.14
+     |              |         |    |    +--- org.codehaus.groovy:groovy:2.5.14
+     |              |         |    |    +--- org.codehaus.groovy:groovy-cli-picocli:2.5.14
+     |              |         |    |    |    +--- org.codehaus.groovy:groovy:2.5.14
+     |              |         |    |    |    \--- info.picocli:picocli:4.3.2
+     |              |         |    |    \--- org.codehaus.groovy:groovy-docgenerator:2.5.14
+     |              |         |    |         +--- org.codehaus.groovy:groovy-templates:2.5.14 (*)
+     |              |         |    |         +--- org.codehaus.groovy:groovy:2.5.14
+     |              |         |    |         +--- org.codehaus.groovy:groovy-cli-picocli:2.5.14 (*)
+     |              |         |    |         \--- com.thoughtworks.qdox:qdox:1.12.1
+     |              |         |    +--- org.apache.ant:ant-junit:1.9.15
+     |              |         |    |    \--- org.apache.ant:ant:1.9.15 (*)
+     |              |         |    +--- org.apache.ant:ant-launcher:1.9.15
+     |              |         |    \--- org.apache.ant:ant-antlr:1.9.15
+     |              |         +--- org.codehaus.groovy:groovy-groovydoc:2.5.14 (*)
+     |              |         +--- org.codehaus.groovy:groovy-templates:2.5.14 (*)
+     |              |         \--- org.slf4j:slf4j-api:1.7.30
+     |              \--- org.slf4j:log4j-over-slf4j:1.7.30
+     |                   \--- org.slf4j:slf4j-api:1.7.30
+     +--- org.apache.tomcat.embed:tomcat-embed-core:9.0.44
+     |    \--- org.apache.tomcat:tomcat-annotations-api:9.0.44
+     +--- org.apache.tomcat.embed:tomcat-embed-el:9.0.44
+     +--- org.apache.tomcat.embed:tomcat-embed-jasper:9.0.44
+     |    +--- org.apache.tomcat.embed:tomcat-embed-core:9.0.44 (*)
+     |    +--- org.apache.tomcat.embed:tomcat-embed-el:9.0.44
+     |    \--- org.eclipse.jdt:ecj:3.18.0
+     +--- org.apache.tomcat.embed:tomcat-embed-websocket:9.0.44
+     |    \--- org.apache.tomcat.embed:tomcat-embed-core:9.0.44 (*)
+     \--- javax.servlet:javax.servlet-api:4.0.1
+
+grettySpringLoaded
+\--- org.springframework:springloaded:1.2.8.RELEASE
+
+grettyStarter
+\--- org.gretty:gretty-starter:3.0.4
+     \--- org.gretty:gretty-core:3.0.4
+          +--- org.codehaus.groovy:groovy:2.5.14
+          +--- org.codehaus.groovy:groovy-json:2.5.14
+          |    \--- org.codehaus.groovy:groovy:2.5.14
+          +--- org.codehaus.groovy:groovy-cli-commons:2.5.14
+          |    +--- org.codehaus.groovy:groovy:2.5.14
+          |    \--- commons-cli:commons-cli:1.4
+          +--- ch.qos.logback:logback-classic:1.1.3
+          |    +--- ch.qos.logback:logback-core:1.1.3
+          |    \--- org.slf4j:slf4j-api:1.7.7 -> 1.7.30
+          +--- commons-cli:commons-cli:1.3.1 -> 1.4
+          +--- commons-configuration:commons-configuration:1.10
+          |    +--- commons-lang:commons-lang:2.6
+          |    \--- commons-logging:commons-logging:1.1.1
+          +--- commons-io:commons-io:2.4
+          +--- org.apache.commons:commons-lang3:3.3.2
+          +--- org.bouncycastle:bcprov-jdk15on:1.60
+          +--- org.springframework.boot:spring-boot-devtools:2.0.2.RELEASE
+          |    +--- org.springframework.boot:spring-boot:2.0.2.RELEASE
+          |    |    +--- org.springframework:spring-core:5.0.6.RELEASE
+          |    |    |    \--- org.springframework:spring-jcl:5.0.6.RELEASE
+          |    |    \--- org.springframework:spring-context:5.0.6.RELEASE
+          |    |         +--- org.springframework:spring-aop:5.0.6.RELEASE
+          |    |         |    +--- org.springframework:spring-beans:5.0.6.RELEASE
+          |    |         |    |    \--- org.springframework:spring-core:5.0.6.RELEASE (*)
+          |    |         |    \--- org.springframework:spring-core:5.0.6.RELEASE (*)
+          |    |         +--- org.springframework:spring-beans:5.0.6.RELEASE (*)
+          |    |         +--- org.springframework:spring-core:5.0.6.RELEASE (*)
+          |    |         \--- org.springframework:spring-expression:5.0.6.RELEASE
+          |    |              \--- org.springframework:spring-core:5.0.6.RELEASE (*)
+          |    \--- org.springframework.boot:spring-boot-autoconfigure:2.0.2.RELEASE
+          |         \--- org.springframework.boot:spring-boot:2.0.2.RELEASE (*)
+          \--- org.gretty:gretty-common:3.0.4
+               +--- org.codehaus.groovy:groovy:2.5.14
+               +--- org.codehaus.groovy:groovy-ant:2.5.14
+               |    +--- org.codehaus.groovy:groovy:2.5.14
+               |    +--- org.apache.ant:ant:1.9.15
+               |    |    \--- org.apache.ant:ant-launcher:1.9.15
+               |    +--- org.codehaus.groovy:groovy-groovydoc:2.5.14
+               |    |    +--- org.codehaus.groovy:groovy-templates:2.5.14
+               |    |    |    +--- org.codehaus.groovy:groovy:2.5.14
+               |    |    |    \--- org.codehaus.groovy:groovy-xml:2.5.14
+               |    |    |         \--- org.codehaus.groovy:groovy:2.5.14
+               |    |    +--- org.codehaus.groovy:groovy:2.5.14
+               |    |    +--- org.codehaus.groovy:groovy-cli-picocli:2.5.14
+               |    |    |    +--- org.codehaus.groovy:groovy:2.5.14
+               |    |    |    \--- info.picocli:picocli:4.3.2
+               |    |    \--- org.codehaus.groovy:groovy-docgenerator:2.5.14
+               |    |         +--- org.codehaus.groovy:groovy-templates:2.5.14 (*)
+               |    |         +--- org.codehaus.groovy:groovy:2.5.14
+               |    |         +--- org.codehaus.groovy:groovy-cli-picocli:2.5.14 (*)
+               |    |         \--- com.thoughtworks.qdox:qdox:1.12.1
+               |    +--- org.apache.ant:ant-junit:1.9.15
+               |    |    \--- org.apache.ant:ant:1.9.15 (*)
+               |    +--- org.apache.ant:ant-launcher:1.9.15
+               |    \--- org.apache.ant:ant-antlr:1.9.15
+               +--- org.codehaus.groovy:groovy-groovydoc:2.5.14 (*)
+               +--- org.codehaus.groovy:groovy-templates:2.5.14 (*)
+               \--- org.slf4j:slf4j-api:1.7.30
+
+implementation - Implementation only dependencies for source set 'main'. (n)
++--- com.google.guava:guava:29.0-jre (n)
+\--- org.slf4j:slf4j-api:1.7.30 (n)
+
+lombok
+\--- org.projectlombok:lombok:1.18.16
+
+providedCompile - Additional compile classpath for libraries that should not be part of the WAR archive.
++--- javax.servlet:javax.servlet-api:3.1.0
+\--- javax.websocket:javax.websocket-api:1.0
+
+providedRuntime - Additional runtime classpath for libraries that should not be part of the WAR archive.
++--- javax.servlet:javax.servlet-api:3.1.0
+\--- javax.websocket:javax.websocket-api:1.0
+
+runtimeClasspath - Runtime classpath of source set 'main'.
++--- javax.servlet:javax.servlet-api:3.1.0
++--- javax.websocket:javax.websocket-api:1.0
++--- com.google.guava:guava:29.0-jre
+|    +--- com.google.guava:failureaccess:1.0.1
+|    +--- com.google.guava:listenablefuture:9999.0-empty-to-avoid-conflict-with-guava
+|    +--- com.google.code.findbugs:jsr305:3.0.2
+|    +--- org.checkerframework:checker-qual:2.11.1
+|    +--- com.google.errorprone:error_prone_annotations:2.3.4
+|    \--- com.google.j2objc:j2objc-annotations:1.3
+\--- org.slf4j:slf4j-api:1.7.30
+
+runtimeElements - Elements of runtime for main. (n)
+No dependencies
+
+runtimeOnly - Runtime only dependencies for source set 'main'. (n)
+No dependencies
+
+springBoot
++--- javax.servlet:javax.servlet-api:3.1.0
++--- javax.websocket:javax.websocket-api:1.0
++--- com.google.guava:guava:29.0-jre
+|    +--- com.google.guava:failureaccess:1.0.1
+|    +--- com.google.guava:listenablefuture:9999.0-empty-to-avoid-conflict-with-guava
+|    +--- com.google.code.findbugs:jsr305:3.0.2
+|    +--- org.checkerframework:checker-qual:2.11.1
+|    +--- com.google.errorprone:error_prone_annotations:2.3.4
+|    \--- com.google.j2objc:j2objc-annotations:1.3
+\--- org.slf4j:slf4j-api:1.7.30
+
+testAnnotationProcessor - Annotation processors and their dependencies for source set 'test'.
+\--- org.projectlombok:lombok:1.18.16
+
+testCompileClasspath - Compile classpath for source set 'test'.
++--- javax.servlet:javax.servlet-api:3.1.0
++--- javax.websocket:javax.websocket-api:1.0
++--- com.google.guava:guava:29.0-jre
+|    +--- com.google.guava:failureaccess:1.0.1
+|    +--- com.google.guava:listenablefuture:9999.0-empty-to-avoid-conflict-with-guava
+|    +--- com.google.code.findbugs:jsr305:3.0.2
+|    +--- org.checkerframework:checker-qual:2.11.1
+|    +--- com.google.errorprone:error_prone_annotations:2.3.4
+|    \--- com.google.j2objc:j2objc-annotations:1.3
++--- org.slf4j:slf4j-api:1.7.30
++--- org.projectlombok:lombok:1.18.16
+\--- org.junit.jupiter:junit-jupiter-api:5.6.2
+     +--- org.junit:junit-bom:5.6.2
+     |    +--- org.junit.jupiter:junit-jupiter-api:5.6.2 (c)
+     |    \--- org.junit.platform:junit-platform-commons:1.6.2 (c)
+     +--- org.apiguardian:apiguardian-api:1.1.0
+     +--- org.opentest4j:opentest4j:1.2.0
+     \--- org.junit.platform:junit-platform-commons:1.6.2
+          +--- org.junit:junit-bom:5.6.2 (*)
+          \--- org.apiguardian:apiguardian-api:1.1.0
+
+testCompileOnly - Compile only dependencies for source set 'test'. (n)
+No dependencies
+
+testImplementation - Implementation only dependencies for source set 'test'. (n)
+\--- org.junit.jupiter:junit-jupiter-api:5.6.2 (n)
+
+testRuntimeClasspath - Runtime classpath of source set 'test'.
++--- javax.servlet:javax.servlet-api:3.1.0
++--- javax.websocket:javax.websocket-api:1.0
++--- com.google.guava:guava:29.0-jre
+|    +--- com.google.guava:failureaccess:1.0.1
+|    +--- com.google.guava:listenablefuture:9999.0-empty-to-avoid-conflict-with-guava
+|    +--- com.google.code.findbugs:jsr305:3.0.2
+|    +--- org.checkerframework:checker-qual:2.11.1
+|    +--- com.google.errorprone:error_prone_annotations:2.3.4
+|    \--- com.google.j2objc:j2objc-annotations:1.3
++--- org.slf4j:slf4j-api:1.7.30
++--- org.junit.jupiter:junit-jupiter-api:5.6.2
+|    +--- org.junit:junit-bom:5.6.2
+|    |    +--- org.junit.jupiter:junit-jupiter-api:5.6.2 (c)
+|    |    +--- org.junit.jupiter:junit-jupiter-engine:5.6.2 (c)
+|    |    +--- org.junit.platform:junit-platform-commons:1.6.2 (c)
+|    |    \--- org.junit.platform:junit-platform-engine:1.6.2 (c)
+|    +--- org.apiguardian:apiguardian-api:1.1.0
+|    +--- org.opentest4j:opentest4j:1.2.0
+|    \--- org.junit.platform:junit-platform-commons:1.6.2
+|         +--- org.junit:junit-bom:5.6.2 (*)
+|         \--- org.apiguardian:apiguardian-api:1.1.0
+\--- org.junit.jupiter:junit-jupiter-engine -> 5.6.2
+     +--- org.junit:junit-bom:5.6.2 (*)
+     +--- org.apiguardian:apiguardian-api:1.1.0
+     +--- org.junit.platform:junit-platform-engine:1.6.2
+     |    +--- org.junit:junit-bom:5.6.2 (*)
+     |    +--- org.apiguardian:apiguardian-api:1.1.0
+     |    +--- org.opentest4j:opentest4j:1.2.0
+     |    \--- org.junit.platform:junit-platform-commons:1.6.2 (*)
+     \--- org.junit.jupiter:junit-jupiter-api:5.6.2 (*)
+
+testRuntimeOnly - Runtime only dependencies for source set 'test'. (n)
+\--- org.junit.jupiter:junit-jupiter-engine (n)
+
+(c) - dependency constraint
+(*) - dependencies omitted (listed previously)
+
+(n) - Not resolved (configuration is not meant to be resolved)
+
+A web-based, searchable dependency report is available by adding the --scan option.
+
+Deprecated Gradle features were used in this build, making it incompatible with Gradle 7.0.
+Use '--warning-mode all' to show the individual deprecation warnings.
+See https://docs.gradle.org/6.7.1/userguide/command_line_interface.html#sec:command_line_warnings
+
+BUILD SUCCESSFUL in 2s
+1 actionable task: 1 executed

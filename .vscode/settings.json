@@ -1,0 +1,8 @@
+{
+    "project": {
+        "bash_bin": "D:\\Program Files\\Git\\bin\\bash.exe",
+        "source_path": "D:\\opt\\src",
+    },
+    "terminal.integrated.shell.windows": "${config:project.bash_bin}",
+    "java.configuration.updateBuildConfiguration": "automatic",
+}
